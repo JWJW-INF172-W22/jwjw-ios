@@ -12,7 +12,7 @@
 		988182C627CB814E009D3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C527CB814E009D3661 /* Assets.xcassets */; };
 		988182C927CB814E009D3661 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C827CB814E009D3661 /* Preview Assets.xcassets */; };
 		988182D827CBFE33009D3661 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182D727CBFE33009D3661 /* UIConstants.swift */; };
-		98E9256F27CC0806000942DA /* JWJWHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9256E27CC0806000942DA /* JWJWHeaderComponent.swift */; };
+		98E9256F27CC0806000942DA /* JWJWCenterHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9256E27CC0806000942DA /* JWJWCenterHeaderComponent.swift */; };
 		98E9257227CC3CB2000942DA /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9257127CC3CB2000942DA /* ButtonComponent.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		988182C827CB814E009D3661 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		988182CA27CB814E009D3661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		988182D727CBFE33009D3661 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
-		98E9256E27CC0806000942DA /* JWJWHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWJWHeaderComponent.swift; sourceTree = "<group>"; };
+		98E9256E27CC0806000942DA /* JWJWCenterHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWJWCenterHeaderComponent.swift; sourceTree = "<group>"; };
 		98E9257127CC3CB2000942DA /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +96,7 @@
 		988182D327CBF921009D3661 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				98E9256E27CC0806000942DA /* JWJWHeaderComponent.swift */,
+				98E9256E27CC0806000942DA /* JWJWCenterHeaderComponent.swift */,
 				98E9257127CC3CB2000942DA /* ButtonComponent.swift */,
 			);
 			path = Components;
@@ -182,7 +182,7 @@
 				988182C427CB8148009D3661 /* LoginOrSignupView.swift in Sources */,
 				98E9257227CC3CB2000942DA /* ButtonComponent.swift in Sources */,
 				988182C227CB8148009D3661 /* Just_Women_Just_WalkApp.swift in Sources */,
-				98E9256F27CC0806000942DA /* JWJWHeaderComponent.swift in Sources */,
+				98E9256F27CC0806000942DA /* JWJWCenterHeaderComponent.swift in Sources */,
 				988182D827CBFE33009D3661 /* UIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ struct LoginOrSignupView: View {
             uiConstants.bgColor.ignoresSafeArea()
             VStack {
                 Spacer()
-                JWJWHeaderComponent()
+                JWJWCenterHeaderComponent()
                 Spacer()
                 ButtonComponent(text: .constant("Login"), type: .constant(.solid))
                 ButtonComponent(text: .constant("Sign Up"), type: .constant(.outline))
