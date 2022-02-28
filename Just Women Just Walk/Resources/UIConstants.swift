@@ -31,5 +31,8 @@ class UIConstants : ObservableObject {
     @Published var buttonHeight : CGFloat = 50
     @Published var buttonWidth : CGFloat = 200
     
+    @Published var dividerLineWidth : CGFloat = 2
+    
     @Published var headerText = "Just Women \n Just Walk"
+    @Published var headerShortText = "JWJW"
 }

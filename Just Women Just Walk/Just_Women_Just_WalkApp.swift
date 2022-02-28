@@ -12,7 +12,9 @@ struct Just_Women_Just_WalkApp: App {
     @StateObject var uiConstants = UIConstants()
     var body: some Scene {
         WindowGroup {
-            LoginOrSignupView().environmentObject(uiConstants)
+            PageContainerComponent(pages: .constant([AnyView(LoginOrSignupView())]),
+                                   currPage: 1)
+                .environmentObject(UIConstants())
         }
     }
 }
