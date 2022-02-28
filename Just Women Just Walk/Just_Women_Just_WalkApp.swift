@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Just_Women_Just_WalkApp: App {
+    @StateObject var uiConstants = UIConstants()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginOrSignupView().environmentObject(uiConstants)
         }
     }
 }

@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		988182C227CB8148009D3661 /* Just_Women_Just_WalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182C127CB8148009D3661 /* Just_Women_Just_WalkApp.swift */; };
-		988182C427CB8148009D3661 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182C327CB8148009D3661 /* ContentView.swift */; };
+		988182C427CB8148009D3661 /* LoginOrSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182C327CB8148009D3661 /* LoginOrSignupView.swift */; };
 		988182C627CB814E009D3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C527CB814E009D3661 /* Assets.xcassets */; };
 		988182C927CB814E009D3661 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C827CB814E009D3661 /* Preview Assets.xcassets */; };
+		988182D827CBFE33009D3661 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182D727CBFE33009D3661 /* UIConstants.swift */; };
+		98E9256F27CC0806000942DA /* JWJWHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9256E27CC0806000942DA /* JWJWHeaderComponent.swift */; };
+		98E9257227CC3CB2000942DA /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9257127CC3CB2000942DA /* ButtonComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		988182BE27CB8148009D3661 /* Just Women Just Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Women Just Walk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		988182C127CB8148009D3661 /* Just_Women_Just_WalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just_Women_Just_WalkApp.swift; sourceTree = "<group>"; };
-		988182C327CB8148009D3661 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		988182C327CB8148009D3661 /* LoginOrSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignupView.swift; sourceTree = "<group>"; };
 		988182C527CB814E009D3661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		988182C827CB814E009D3661 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		988182CA27CB814E009D3661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		988182D727CBFE33009D3661 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		98E9256E27CC0806000942DA /* JWJWHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWJWHeaderComponent.swift; sourceTree = "<group>"; };
+		98E9257127CC3CB2000942DA /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,11 @@
 		988182C027CB8148009D3661 /* Just Women Just Walk */ = {
 			isa = PBXGroup;
 			children = (
+				988182D627CBFE15009D3661 /* Resources */,
+				988182D327CBF921009D3661 /* Components */,
+				988182D227CBF91C009D3661 /* Views */,
+				988182D127CBF916009D3661 /* Models */,
 				988182C127CB8148009D3661 /* Just_Women_Just_WalkApp.swift */,
-				988182C327CB8148009D3661 /* ContentView.swift */,
 				988182C527CB814E009D3661 /* Assets.xcassets */,
 				988182CA27CB814E009D3661 /* Info.plist */,
 				988182C727CB814E009D3661 /* Preview Content */,
@@ -67,6 +76,38 @@
 				988182C827CB814E009D3661 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		988182D127CBF916009D3661 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		988182D227CBF91C009D3661 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				988182C327CB8148009D3661 /* LoginOrSignupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		988182D327CBF921009D3661 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				98E9256E27CC0806000942DA /* JWJWHeaderComponent.swift */,
+				98E9257127CC3CB2000942DA /* ButtonComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		988182D627CBFE15009D3661 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				988182D727CBFE33009D3661 /* UIConstants.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988182C427CB8148009D3661 /* ContentView.swift in Sources */,
+				988182C427CB8148009D3661 /* LoginOrSignupView.swift in Sources */,
+				98E9257227CC3CB2000942DA /* ButtonComponent.swift in Sources */,
 				988182C227CB8148009D3661 /* Just_Women_Just_WalkApp.swift in Sources */,
+				98E9256F27CC0806000942DA /* JWJWHeaderComponent.swift in Sources */,
+				988182D827CBFE33009D3661 /* UIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
