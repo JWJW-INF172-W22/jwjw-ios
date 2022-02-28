@@ -14,7 +14,7 @@ struct SignUp1_View: View {
     
     init() {
         UITableView.appearance().backgroundColor = .clear
-        UIScrollView.appearance().backgroundColor = .clear
+        UITextField.appearance().backgroundColor = .clear
     }
     
     var body: some View {
@@ -24,9 +24,7 @@ struct SignUp1_View: View {
                 JWJWAppHeaderComponent(isNameVisible: .constant(false))
                 Form {
                     TextField("Name", text: $formUsername)
-                        .textFieldStyle(PlainTextFieldStyle())
-                        .background(Color.clear)
-                        .foregroundColor(.clear)
+                        .background(Rectangle().fill(uiConstants.bgColor).frame(width:400, height: 50))
                 }
             }
         }
