@@ -27,10 +27,10 @@ struct ButtonComponent: View {
                         .foregroundColor(.white)
                         .padding([.all])
                         .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(uiConstants.buttonbgColor, lineWidth: 1)
+                            RoundedRectangle(cornerRadius: uiConstants.buttonCornerRadius)
+                                .stroke(uiConstants.buttonbgColor, lineWidth: uiConstants.buttonLineWidth)
                                 .background(uiConstants.buttonbgColor)
-                                .cornerRadius(10)
+                                .cornerRadius(uiConstants.buttonCornerRadius)
                                 .frame(width: uiConstants.buttonWidth, height: uiConstants.buttonHeight)
                         )
                    }
@@ -43,8 +43,8 @@ struct ButtonComponent: View {
                         .foregroundColor(uiConstants.fgTextColor)
                         .padding([.all])
                         .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(uiConstants.fgTextColor, lineWidth: 1)
+                            RoundedRectangle(cornerRadius: uiConstants.buttonCornerRadius)
+                                .stroke(uiConstants.fgTextColor, lineWidth: uiConstants.buttonLineWidth)
                                 .frame(width: uiConstants.buttonWidth, height: uiConstants.buttonHeight)
                         )
                    }

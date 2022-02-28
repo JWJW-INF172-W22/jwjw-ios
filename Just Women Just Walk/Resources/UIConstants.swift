@@ -26,6 +26,8 @@ class UIConstants : ObservableObject {
         blue: 46 / 255
     )
     
+    @Published var buttonCornerRadius : CGFloat = 10
+    @Published var buttonLineWidth : CGFloat = 1
     @Published var buttonHeight : CGFloat = 50
     @Published var buttonWidth : CGFloat = 200
     
