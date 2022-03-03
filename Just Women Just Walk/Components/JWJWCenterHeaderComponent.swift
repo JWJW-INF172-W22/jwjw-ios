@@ -1,5 +1,5 @@
 //
-//  JWJWHeaderComponent.swift
+//  JWJWCenterHeaderComponent.swift
 //  Just Women Just Walk
 //
 //  Created by Brandon Nguyen on 2/27/22.
@@ -10,10 +10,7 @@ import SwiftUI
 struct JWJWCenterHeaderComponent: View {
     @EnvironmentObject var uiConstants : UIConstants
     var body: some View {
-        Text(uiConstants.headerText)
-            .font(.title)
-            .fontWeight(.black)
-            .multilineTextAlignment(.center)
+        CenterHeader_Component(headerText: uiConstants.headerText)
     }
 }
 
