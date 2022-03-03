@@ -13,7 +13,7 @@ enum ButtonType {
     case text
 }
 
-struct ButtonComponent: View {
+struct Button_Component: View {
     @EnvironmentObject var uiConstants : UIConstants
     
     @Binding var text: String
@@ -66,7 +66,7 @@ struct ButtonComponent: View {
 
 struct ButtonComponent_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonComponent(text: .constant("Button Text"),
+        Button_Component(text: .constant("Button Text"),
                         type: .constant(.solid)
         ).environmentObject(UIConstants())
     }

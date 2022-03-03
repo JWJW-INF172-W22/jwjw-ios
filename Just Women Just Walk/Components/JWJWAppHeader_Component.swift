@@ -29,7 +29,7 @@ struct JWJWAppHeader_Component: View {
                     .foregroundColor(uiConstants.fgTextColor)
                     .padding(.trailing)
             }
-            CustomDividerComponent()
+            CustomDivider_Component()
         }
     }
 }

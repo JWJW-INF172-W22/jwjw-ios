@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PageContainerComponent: View {
+struct PageContainer_Component: View {
     @EnvironmentObject var uiConstants : UIConstants
     
     @Binding var pages : [AnyView]
@@ -18,7 +18,7 @@ struct PageContainerComponent: View {
         VStack {
             AnyView(pages[currPage - 1])
             Spacer()
-            PaginatorComponent(pages: .constant(pages.count),
+            Paginator_Component(pages: .constant(pages.count),
                                currPage: $currPage)
         }
     }
@@ -26,7 +26,7 @@ struct PageContainerComponent: View {
 
 struct PageContainerComponent_Previews: PreviewProvider {
     static var previews: some View {
-        PageContainerComponent(pages: .constant([AnyView(LoginOrSignupView())]),
+        PageContainer_Component(pages: .constant([AnyView(LoginOrSignup_View())]),
                                currPage: 1)
             .environmentObject(UIConstants())
     }

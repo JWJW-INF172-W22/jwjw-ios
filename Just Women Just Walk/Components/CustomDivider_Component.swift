@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomDividerComponent: View {
+struct CustomDivider_Component: View {
     @EnvironmentObject var uiConstants : UIConstants
     
     var body: some View {
@@ -20,6 +20,6 @@ struct CustomDividerComponent: View {
 
 struct CustomDividerComponent_Previews: PreviewProvider {
     static var previews: some View {
-        CustomDividerComponent().environmentObject(UIConstants())
+        CustomDivider_Component().environmentObject(UIConstants())
     }
 }

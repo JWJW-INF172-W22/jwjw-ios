@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PaginatorComponent: View {
+struct Paginator_Component: View {
     @Binding var pages: Int
     @Binding var currPage: Int
     
@@ -42,7 +42,7 @@ struct PaginatorComponent: View {
 
 struct PaginatorComponent_Previews: PreviewProvider {
     static var previews: some View {
-        PaginatorComponent(pages: .constant(6),
+        Paginator_Component(pages: .constant(6),
                            currPage: .constant(3))
     }
 }

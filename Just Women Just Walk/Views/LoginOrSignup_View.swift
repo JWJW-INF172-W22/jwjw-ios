@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginOrSignupView: View {
+struct LoginOrSignup_View: View {
     @EnvironmentObject var uiConstants : UIConstants
     
     var body: some View {
@@ -15,11 +15,11 @@ struct LoginOrSignupView: View {
             uiConstants.bgColor.ignoresSafeArea()
             VStack {
                 Spacer()
-                JWJWCenterHeaderComponent()
+                JWJWCenterHeader_Component()
                 Spacer()
-                ButtonComponent(text: .constant("Login"), type: .constant(.solid))
-                ButtonComponent(text: .constant("Sign Up"), type: .constant(.outline))
-                ButtonComponent(text: .constant("Forgot Password?"), type: .constant(.text))
+                Button_Component(text: .constant("Login"), type: .constant(.solid))
+                Button_Component(text: .constant("Sign Up"), type: .constant(.outline))
+                Button_Component(text: .constant("Forgot Password?"), type: .constant(.text))
                 Spacer()
             }
         }
@@ -28,7 +28,7 @@ struct LoginOrSignupView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginOrSignupView().environmentObject(UIConstants())
+        LoginOrSignup_View().environmentObject(UIConstants())
     }
     
 }

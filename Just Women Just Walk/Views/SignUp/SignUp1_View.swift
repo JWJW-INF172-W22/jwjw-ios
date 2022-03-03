@@ -20,13 +20,12 @@ struct SignUp1_View: View {
         ZStack {
             uiConstants.bgColor.ignoresSafeArea()
             VStack {
-                JWJWAppHeaderComponent(isNameVisible: .constant(false))
+                JWJWAppHeader_Component(isNameVisible: .constant(false))
                 Spacer()
                 Text("Let's get started!")
                     .font(.title)
                     .fontWeight(.black)
                     .multilineTextAlignment(.center)
-                Spacer()
                 FormField_Component(formType: .constant(.text),
                                     labelText: .constant("Name"),
                                     fieldValue: $formName)
