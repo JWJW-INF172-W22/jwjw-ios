@@ -30,7 +30,6 @@ struct JWJWAppHeaderComponent: View {
                     .padding(.trailing)
             }
             CustomDividerComponent()
-            Spacer()
         }
     }
 }

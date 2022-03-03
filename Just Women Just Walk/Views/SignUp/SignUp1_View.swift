@@ -10,22 +10,33 @@ import SwiftUI
 struct SignUp1_View: View {
     @EnvironmentObject var uiConstants : UIConstants
     
-    @State var formUsername : String = ""
+    @Binding var formName : String
+    @Binding var formEmail : String
+    @Binding var formPassword : String
     
-    init() {
-        UITableView.appearance().backgroundColor = .clear
-        UITextField.appearance().backgroundColor = .clear
-    }
+    
     
     var body: some View {
         ZStack {
             uiConstants.bgColor.ignoresSafeArea()
             VStack {
                 JWJWAppHeaderComponent(isNameVisible: .constant(false))
-                Form {
-                    TextField("Name", text: $formUsername)
-                        .background(Rectangle().fill(uiConstants.bgColor).frame(width:400, height: 50))
-                }
+                Spacer()
+                Text("Let's get started!")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .multilineTextAlignment(.center)
+                Spacer()
+                FormField_Component(formType: .constant(.text),
+                                    labelText: .constant("Name"),
+                                    fieldValue: $formName)
+                FormField_Component(formType: .constant(.text),
+                                    labelText: .constant("Email"),
+                                    fieldValue: $formEmail)
+                FormField_Component(formType: .constant(.secure),
+                                    labelText: .constant("Password"),
+                                    fieldValue: $formPassword)
+                Spacer()
             }
         }
     }
@@ -33,6 +44,9 @@ struct SignUp1_View: View {
 
 struct SignUp1_View_Previews: PreviewProvider {
     static var previews: some View {
-        SignUp1_View().environmentObject(UIConstants())
+        SignUp1_View(formName: .constant(""),
+                     formEmail: .constant(""),
+                     formPassword: .constant(""))
+            .environmentObject(UIConstants())
     }
 }
