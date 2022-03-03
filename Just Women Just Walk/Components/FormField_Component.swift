@@ -39,7 +39,7 @@ struct FormField_Component: View {
                              alignment: .bottom)
             }
             
-        }.padding(.horizontal)
+        }.padding(.all)
     }
 }
 
