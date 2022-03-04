@@ -38,8 +38,7 @@ struct FormField_Component: View {
                     .overlay(CustomDivider_Component(),
                              alignment: .bottom)
             }
-            
-        }.padding(.all)
+        }.padding()
     }
 }
 

@@ -20,16 +20,32 @@ class UIConstants : ObservableObject {
         blue: 97 / 255
     )
     
+    @Published var selectedButtonbgColor = Color(
+        red: 248 / 255,
+        green: 109 / 255,
+        blue: 112 / 255
+    )
+    
     @Published var fgTextColor = Color(
         red: 20 / 255,
         green: 51 / 255,
         blue: 46 / 255
     )
     
+    @Published var dropDownbgColor = Color(
+        red: 177 / 255,
+        green: 208 / 255,
+        blue: 255 / 255
+    )
+    
     @Published var buttonCornerRadius : CGFloat = 10
     @Published var buttonLineWidth : CGFloat = 1
     @Published var buttonHeight : CGFloat = 50
     @Published var buttonWidth : CGFloat = 200
+    @Published var dropDownHeight : CGFloat = 50
+    @Published var dropDownWidth : CGFloat = 400
+    @Published var rgCornerRadius : CGFloat = 50
+    @Published var rgVerticalPadding : CGFloat = 7.5
     
     @Published var dividerLineWidth : CGFloat = 1
     

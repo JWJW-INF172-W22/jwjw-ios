@@ -25,7 +25,7 @@ struct Button_Component: View {
                    label: {
                     Text(text)
                         .foregroundColor(.white)
-                        .padding([.all])
+                        .padding()
                         .background(
                             RoundedRectangle(cornerRadius: uiConstants.buttonCornerRadius)
                                 .stroke(uiConstants.buttonbgColor, lineWidth: uiConstants.buttonLineWidth)

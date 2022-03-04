@@ -26,6 +26,7 @@ struct SignUp1_View: View {
                     .font(.title)
                     .fontWeight(.black)
                     .multilineTextAlignment(.center)
+                    .padding(.bottom)
                 FormField_Component(formType: .constant(.text),
                                     labelText: .constant("Name"),
                                     fieldValue: $formName)

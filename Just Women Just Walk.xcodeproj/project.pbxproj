@@ -12,6 +12,8 @@
 		988182C627CB814E009D3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C527CB814E009D3661 /* Assets.xcassets */; };
 		988182C927CB814E009D3661 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C827CB814E009D3661 /* Preview Assets.xcassets */; };
 		988182D827CBFE33009D3661 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182D727CBFE33009D3661 /* UIConstants.swift */; };
+		98E4A32827D17B3200F07E6D /* SignUp2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E4A32727D17B3200F07E6D /* SignUp2_View.swift */; };
+		98E4A32B27D182B600F07E6D /* DropDown_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E4A32A27D182B600F07E6D /* DropDown_Component.swift */; };
 		98E9256F27CC0806000942DA /* JWJWCenterHeader_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9256E27CC0806000942DA /* JWJWCenterHeader_Component.swift */; };
 		98E9257227CC3CB2000942DA /* Button_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9257127CC3CB2000942DA /* Button_Component.swift */; };
 		98E9257527CC8CED000942DA /* JWJWAppHeader_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9257427CC8CED000942DA /* JWJWAppHeader_Component.swift */; };
@@ -21,6 +23,7 @@
 		98E9258227CCAA76000942DA /* SignUp1_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9258127CCAA76000942DA /* SignUp1_View.swift */; };
 		98FBDFB227D0748B00A9FCEC /* FormField_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FBDFB127D0748B00A9FCEC /* FormField_Component.swift */; };
 		98FBDFB527D07C7C00A9FCEC /* CenterHeader_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FBDFB427D07C7C00A9FCEC /* CenterHeader_Component.swift */; };
+		98FBDFBE27D082E200A9FCEC /* RadioButtonGroup_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FBDFBD27D082E200A9FCEC /* RadioButtonGroup_Component.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,8 @@
 		988182C827CB814E009D3661 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		988182CA27CB814E009D3661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		988182D727CBFE33009D3661 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		98E4A32727D17B3200F07E6D /* SignUp2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2_View.swift; sourceTree = "<group>"; };
+		98E4A32A27D182B600F07E6D /* DropDown_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown_Component.swift; sourceTree = "<group>"; };
 		98E9256E27CC0806000942DA /* JWJWCenterHeader_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWJWCenterHeader_Component.swift; sourceTree = "<group>"; };
 		98E9257127CC3CB2000942DA /* Button_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button_Component.swift; sourceTree = "<group>"; };
 		98E9257427CC8CED000942DA /* JWJWAppHeader_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWJWAppHeader_Component.swift; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		98E9258127CCAA76000942DA /* SignUp1_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp1_View.swift; sourceTree = "<group>"; };
 		98FBDFB127D0748B00A9FCEC /* FormField_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField_Component.swift; sourceTree = "<group>"; };
 		98FBDFB427D07C7C00A9FCEC /* CenterHeader_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterHeader_Component.swift; sourceTree = "<group>"; };
+		98FBDFBD27D082E200A9FCEC /* RadioButtonGroup_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonGroup_Component.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,8 @@
 				98E9257D27CC9A22000942DA /* PageContainer_Component.swift */,
 				98FBDFB127D0748B00A9FCEC /* FormField_Component.swift */,
 				98FBDFB427D07C7C00A9FCEC /* CenterHeader_Component.swift */,
+				98FBDFBD27D082E200A9FCEC /* RadioButtonGroup_Component.swift */,
+				98E4A32A27D182B600F07E6D /* DropDown_Component.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -135,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				98E9258127CCAA76000942DA /* SignUp1_View.swift */,
+				98E4A32727D17B3200F07E6D /* SignUp2_View.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -217,9 +226,12 @@
 				98E9257527CC8CED000942DA /* JWJWAppHeader_Component.swift in Sources */,
 				988182C227CB8148009D3661 /* Just_Women_Just_WalkApp.swift in Sources */,
 				98FBDFB227D0748B00A9FCEC /* FormField_Component.swift in Sources */,
+				98E4A32B27D182B600F07E6D /* DropDown_Component.swift in Sources */,
+				98E4A32827D17B3200F07E6D /* SignUp2_View.swift in Sources */,
 				98E9256F27CC0806000942DA /* JWJWCenterHeader_Component.swift in Sources */,
 				988182D827CBFE33009D3661 /* UIConstants.swift in Sources */,
 				98FBDFB527D07C7C00A9FCEC /* CenterHeader_Component.swift in Sources */,
+				98FBDFBE27D082E200A9FCEC /* RadioButtonGroup_Component.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
