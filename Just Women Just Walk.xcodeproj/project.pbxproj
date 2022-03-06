@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9811F46227D478B7001DC440 /* SignUp4_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F46127D478B7001DC440 /* SignUp4_View.swift */; };
+		9811F46527D47BFF001DC440 /* SignUpPage_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F46427D47BFF001DC440 /* SignUpPage_View.swift */; };
 		9812A56727D406290092ADCD /* TileSelect_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9812A56627D406290092ADCD /* TileSelect_Component.swift */; };
 		981AB70227D4735700865950 /* SignUp3_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981AB70127D4735700865950 /* SignUp3_View.swift */; };
 		988182C227CB8148009D3661 /* Just_Women_Just_WalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182C127CB8148009D3661 /* Just_Women_Just_WalkApp.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		9811F46127D478B7001DC440 /* SignUp4_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp4_View.swift; sourceTree = "<group>"; };
+		9811F46427D47BFF001DC440 /* SignUpPage_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage_View.swift; sourceTree = "<group>"; };
 		9812A56627D406290092ADCD /* TileSelect_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileSelect_Component.swift; sourceTree = "<group>"; };
 		981AB70127D4735700865950 /* SignUp3_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp3_View.swift; sourceTree = "<group>"; };
 		988182BE27CB8148009D3661 /* Just Women Just Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Women Just Walk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 				98E4A32727D17B3200F07E6D /* SignUp2_View.swift */,
 				981AB70127D4735700865950 /* SignUp3_View.swift */,
 				9811F46127D478B7001DC440 /* SignUp4_View.swift */,
+				9811F46427D47BFF001DC440 /* SignUpPage_View.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				98E4A32B27D182B600F07E6D /* DropDown_Component.swift in Sources */,
 				98E4A32827D17B3200F07E6D /* SignUp2_View.swift in Sources */,
 				981AB70227D4735700865950 /* SignUp3_View.swift in Sources */,
+				9811F46527D47BFF001DC440 /* SignUpPage_View.swift in Sources */,
 				98E9256F27CC0806000942DA /* JWJWCenterHeader_Component.swift in Sources */,
 				988182D827CBFE33009D3661 /* UIConstants.swift in Sources */,
 				98FBDFB527D07C7C00A9FCEC /* CenterHeader_Component.swift in Sources */,

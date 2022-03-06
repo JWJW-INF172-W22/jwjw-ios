@@ -18,7 +18,9 @@ struct Paginator_Component: View {
     var body: some View {
         HStack {
             if(currPage > 1) {
-                Button(action: {}, label: {
+                Button(action: {
+                    currPage = currPage - 1
+                }, label: {
                     Image(systemName: "arrow.backward").foregroundColor(.black)
                 }).padding(.leading)
             }
@@ -32,7 +34,9 @@ struct Paginator_Component: View {
             }
             Spacer()
             if(currPage < pages) {
-                Button(action: {}, label: {
+                Button(action: {
+                    currPage = currPage + 1
+                }, label: {
                     Image(systemName: "arrow.forward").foregroundColor(.black)
                 }).padding(.trailing)
             }

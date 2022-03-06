@@ -15,11 +15,14 @@ struct PageContainer_Component: View {
     @State var currPage : Int = 1
     
     var body: some View {
-        VStack {
-            AnyView(pages[currPage - 1])
-            Spacer()
-            Paginator_Component(pages: .constant(pages.count),
-                               currPage: $currPage)
+        ZStack {
+            uiConstants.bgColor.ignoresSafeArea()
+            VStack {
+                AnyView(pages[currPage - 1])
+                Spacer()
+                Paginator_Component(pages: .constant(pages.count),
+                                   currPage: $currPage)
+            }
         }
     }
 }

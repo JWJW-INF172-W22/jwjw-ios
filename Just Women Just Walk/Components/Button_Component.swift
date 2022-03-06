@@ -18,10 +18,11 @@ struct Button_Component: View {
     
     @Binding var text: String
     @Binding var type: ButtonType
+    @Binding var action: () -> Void
     
     var body: some View {
         if(type == .solid) {
-            Button(action: {},
+            Button(action: action,
                    label: {
                     Text(text)
                         .foregroundColor(.white)
@@ -67,7 +68,7 @@ struct Button_Component: View {
 struct ButtonComponent_Previews: PreviewProvider {
     static var previews: some View {
         Button_Component(text: .constant("Button Text"),
-                        type: .constant(.solid)
+                         type: .constant(.solid), action: {}
         ).environmentObject(UIConstants())
     }
 }

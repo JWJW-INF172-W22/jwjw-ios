@@ -10,6 +10,8 @@ import SwiftUI
 struct LoginOrSignup_View: View {
     @EnvironmentObject var uiConstants : UIConstants
     
+    @State var signUpPressed : Bool = false
+    
     var body: some View {
         ZStack {
             uiConstants.bgColor.ignoresSafeArea()
