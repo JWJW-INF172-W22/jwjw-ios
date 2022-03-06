@@ -33,8 +33,8 @@ class UIConstants : ObservableObject {
     )
     
     @Published var dropDownbgColor = Color(
-        red: 177 / 255,
-        green: 208 / 255,
+        red: 237 / 255,
+        green: 244 / 255,
         blue: 255 / 255
     )
     
