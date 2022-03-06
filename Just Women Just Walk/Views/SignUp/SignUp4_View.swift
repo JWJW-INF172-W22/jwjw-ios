@@ -18,13 +18,12 @@ struct SignUp4_View: View {
             Text("Approximately how many steps do you walk each day?")
             TileSelect_Component(tileColor: .constant(.blue),
                                  choices: .constant([
-                                    ["<2000", "Improve mental health"],
-                                    ["Burn calories", "Get in shape"],
-                                    ["Reduce stress", "Increase energy"],
-                                    ["Connect with family/friends"]
+                                    ["<2000", "2,000-3,000"],
+                                    ["3,001-5,000", "5,001-8000"],
+                                    ["8,001-10,000+", "Not sure"],
                                  ]),
                                  selected: $formSelected,
-                                 max: .constant(3))
+                                 max: .constant(1))
             DropDown_Component(selected: $formStepsGoal,
                                choices: .constant([
                                 "2000 steps (14,000 weekly)",
