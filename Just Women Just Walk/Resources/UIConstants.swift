@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class UIConstants : ObservableObject {
+class UIConstants : ObservableObject {    
     @Published var bgColor = Color(
         red: 224 / 255,
         green: 232 / 255,
@@ -36,6 +36,42 @@ class UIConstants : ObservableObject {
         red: 177 / 255,
         green: 208 / 255,
         blue: 255 / 255
+    )
+    
+    @Published var tileRedUnselectedColor = Color(
+        red: 253 / 255,
+        green: 233 / 255,
+        blue: 234 / 255
+    )
+    
+    @Published var tileRedSelectedColor = Color(
+        red: 250 / 255,
+        green: 200 / 255,
+        blue: 193 / 255
+    )
+    
+    @Published var tileRedSelectedStrokeColor = Color(
+        red: 248 / 255,
+        green: 109 / 255,
+        blue: 112 / 255
+    )
+    
+    @Published var tileBlueUnselectedColor = Color(
+        red: 237 / 255,
+        green: 244 / 255,
+        blue: 255 / 255
+    )
+    
+    @Published var tileBlueSelectedColor = Color(
+        red: 177 / 255,
+        green: 208 / 255,
+        blue: 255 / 255
+    )
+    
+    @Published var tileBlueSelectedStrokeColor = Color(
+        red: 0 / 255,
+        green: 83 / 255,
+        blue: 209 / 255
     )
     
     @Published var buttonCornerRadius : CGFloat = 10
