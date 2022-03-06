@@ -12,29 +12,35 @@ struct Paginator_Component: View {
     @Binding var currPage: Int
     
     var body: some View {
-        HStack {
-            if(currPage > 1) {
-                Button(action: {
-                    currPage = currPage - 1
-                }, label: {
-                    Image(systemName: "arrow.backward").foregroundColor(.black)
-                }).padding(.leading)
+        ZStack {
+            HStack {
+                if(currPage > 1) {
+                    Button(action: {
+                        currPage = currPage - 1
+                    }, label: {
+                        Image(systemName: "arrow.backward").foregroundColor(.black)
+                    }).padding(.leading)
+                }
+                Spacer()
             }
-            Spacer()
-            ForEach(0 ..< (currPage - 1), id: \.self) { _ in
-                Image(systemName: "circle.fill").foregroundColor(.black)
+            HStack {
+                ForEach(0 ..< (currPage - 1), id: \.self) { _ in
+                    Image(systemName: "circle.fill").foregroundColor(.black)
+                }
+                Image(systemName: "rectangle.fill").foregroundColor(.black)
+                ForEach(0 ..< (pages - currPage), id: \.self) { _ in
+                    Image(systemName: "circle.fill").foregroundColor(.black)
+                }
             }
-            Image(systemName: "rectangle.fill").foregroundColor(.black)
-            ForEach(0 ..< (pages - currPage), id: \.self) { _ in
-                Image(systemName: "circle.fill").foregroundColor(.black)
-            }
-            Spacer()
-            if(currPage < pages) {
-                Button(action: {
-                    currPage = currPage + 1
-                }, label: {
-                    Image(systemName: "arrow.forward").foregroundColor(.black)
-                }).padding(.trailing)
+            HStack {
+                Spacer()
+                if(currPage < pages) {
+                    Button(action: {
+                        currPage = currPage + 1
+                    }, label: {
+                        Image(systemName: "arrow.forward").foregroundColor(.black)
+                    }).padding(.trailing)
+                }
             }
         }
     }
