@@ -9,12 +9,9 @@ import SwiftUI
 
 @main
 struct Just_Women_Just_WalkApp: App {
-    @StateObject var uiConstants = UIConstants()
     var body: some Scene {
         WindowGroup {
-            PageContainer_Component(pages: .constant([AnyView(LoginOrSignup_View())]),
-                                   currPage: 1)
-                .environmentObject(UIConstants())
+            Main_View()
         }
     }
 }

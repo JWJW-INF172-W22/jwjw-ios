@@ -68,7 +68,7 @@ struct Button_Component: View {
 struct ButtonComponent_Previews: PreviewProvider {
     static var previews: some View {
         Button_Component(text: .constant("Button Text"),
-                         type: .constant(.solid), action: {}
+                         type: .constant(.solid), action: .constant({})
         ).environmentObject(UIConstants())
     }
 }

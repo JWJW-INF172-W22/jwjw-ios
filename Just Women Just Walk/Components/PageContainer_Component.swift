@@ -27,14 +27,10 @@ struct PageContainer_Component: View {
     }
 }
 
-struct PageContainerComponent_Previews: PreviewProvider {
-    static var previews: some View {
-        PageContainer_Component(pages: .constant([AnyView(LoginOrSignup_View())]),
-                               currPage: 1)
-            .environmentObject(UIConstants())
-    }
-}
-
-struct PageList<T: View> {
-    var destination: T
-}
+//struct PageContainerComponent_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PageContainer_Component(pages: .constant([AnyView(LoginOrSignup_View())]),
+//                               currPage: 1)
+//            .environmentObject(UIConstants())
+//    }
+//}

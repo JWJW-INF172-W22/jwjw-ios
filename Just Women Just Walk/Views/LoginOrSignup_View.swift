@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct LoginOrSignup_View: View {
+    @StateObject var viewRouter: ViewRouter
+    
     @EnvironmentObject var uiConstants : UIConstants
-    
-    @State var signUpPressed : Bool = false
-    
+        
     var body: some View {
         ZStack {
             uiConstants.bgColor.ignoresSafeArea()
@@ -19,9 +19,14 @@ struct LoginOrSignup_View: View {
                 Spacer()
                 JWJWCenterHeader_Component()
                 Spacer()
-                Button_Component(text: .constant("Login"), type: .constant(.solid))
-                Button_Component(text: .constant("Sign Up"), type: .constant(.outline))
-                Button_Component(text: .constant("Forgot Password?"), type: .constant(.text))
+                Button_Component(text: .constant("Login"),
+                                 type: .constant(.solid),
+                                 action: .constant({
+                                 }))
+                Button("Sign Up", action: {
+                    viewRouter.currentPage = .SignUp
+                }).buttonStyle(OutlineButton_Style())
+                Button_Component(text: .constant("Forgot Password?"), type: .constant(.text), action: .constant({}))
                 Spacer()
             }
         }
@@ -30,7 +35,8 @@ struct LoginOrSignup_View: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginOrSignup_View().environmentObject(UIConstants())
+        LoginOrSignup_View(viewRouter: ViewRouter())
+            .environmentObject(UIConstants())
     }
     
 }
