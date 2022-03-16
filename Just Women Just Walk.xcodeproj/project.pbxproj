@@ -19,6 +19,7 @@
 		988182C627CB814E009D3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C527CB814E009D3661 /* Assets.xcassets */; };
 		988182C927CB814E009D3661 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C827CB814E009D3661 /* Preview Assets.xcassets */; };
 		988182D827CBFE33009D3661 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182D727CBFE33009D3661 /* UIConstants.swift */; };
+		9897A59027DFDC5C008AC07F /* HomeCharts_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897A58F27DFDC5C008AC07F /* HomeCharts_View.swift */; };
 		98E4A32827D17B3200F07E6D /* SignUp2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E4A32727D17B3200F07E6D /* SignUp2_View.swift */; };
 		98E4A32B27D182B600F07E6D /* DropDown_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E4A32A27D182B600F07E6D /* DropDown_Component.swift */; };
 		98E9256F27CC0806000942DA /* JWJWCenterHeader_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9256E27CC0806000942DA /* JWJWCenterHeader_Component.swift */; };
@@ -31,6 +32,7 @@
 		98FBDFB227D0748B00A9FCEC /* FormField_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FBDFB127D0748B00A9FCEC /* FormField_Component.swift */; };
 		98FBDFB527D07C7C00A9FCEC /* CenterHeader_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FBDFB427D07C7C00A9FCEC /* CenterHeader_Component.swift */; };
 		98FBDFBE27D082E200A9FCEC /* RadioButtonGroup_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FBDFBD27D082E200A9FCEC /* RadioButtonGroup_Component.swift */; };
+		98FCBFA827D88F8E00801896 /* DailyStepsGraph_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FCBFA727D88F8E00801896 /* DailyStepsGraph_Component.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,7 @@
 		988182C827CB814E009D3661 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		988182CA27CB814E009D3661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		988182D727CBFE33009D3661 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		9897A58F27DFDC5C008AC07F /* HomeCharts_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharts_View.swift; sourceTree = "<group>"; };
 		98E4A32727D17B3200F07E6D /* SignUp2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2_View.swift; sourceTree = "<group>"; };
 		98E4A32A27D182B600F07E6D /* DropDown_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown_Component.swift; sourceTree = "<group>"; };
 		98E9256E27CC0806000942DA /* JWJWCenterHeader_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWJWCenterHeader_Component.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		98FBDFB127D0748B00A9FCEC /* FormField_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField_Component.swift; sourceTree = "<group>"; };
 		98FBDFB427D07C7C00A9FCEC /* CenterHeader_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterHeader_Component.swift; sourceTree = "<group>"; };
 		98FBDFBD27D082E200A9FCEC /* RadioButtonGroup_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonGroup_Component.swift; sourceTree = "<group>"; };
+		98FCBFA727D88F8E00801896 /* DailyStepsGraph_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepsGraph_Component.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 				98E9258027CCA8A4000942DA /* SignUp */,
 				988182C327CB8148009D3661 /* LoginOrSignup_View.swift */,
 				9811F46727D4868F001DC440 /* Main_View.swift */,
+				9897A58F27DFDC5C008AC07F /* HomeCharts_View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 		988182D327CBF921009D3661 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				98FCBFA627D88F4600801896 /* Graphs */,
 				98E9256E27CC0806000942DA /* JWJWCenterHeader_Component.swift */,
 				98E9257127CC3CB2000942DA /* Button_Component.swift */,
 				98E9257427CC8CED000942DA /* JWJWAppHeader_Component.swift */,
@@ -167,6 +173,14 @@
 				9811F46427D47BFF001DC440 /* SignUpPage_View.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		98FCBFA627D88F4600801896 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				98FCBFA727D88F8E00801896 /* DailyStepsGraph_Component.swift */,
+			);
+			path = Graphs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,12 +253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				98E9258227CCAA76000942DA /* SignUp1_View.swift in Sources */,
+				98FCBFA827D88F8E00801896 /* DailyStepsGraph_Component.swift in Sources */,
 				9811F46227D478B7001DC440 /* SignUp4_View.swift in Sources */,
 				9811F46E27D48B7F001DC440 /* OutlineButton_Style.swift in Sources */,
 				988182C427CB8148009D3661 /* LoginOrSignup_View.swift in Sources */,
 				98E9257E27CC9A22000942DA /* PageContainer_Component.swift in Sources */,
 				98E9257827CC9196000942DA /* CustomDivider_Component.swift in Sources */,
 				98E9257227CC3CB2000942DA /* Button_Component.swift in Sources */,
+				9897A59027DFDC5C008AC07F /* HomeCharts_View.swift in Sources */,
 				9812A56727D406290092ADCD /* TileSelect_Component.swift in Sources */,
 				98E9257B27CC9384000942DA /* Paginator_Component.swift in Sources */,
 				98E9257527CC8CED000942DA /* JWJWAppHeader_Component.swift in Sources */,
