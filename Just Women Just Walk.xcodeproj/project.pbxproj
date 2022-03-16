@@ -21,6 +21,7 @@
 		988182D827CBFE33009D3661 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182D727CBFE33009D3661 /* UIConstants.swift */; };
 		9897A59027DFDC5C008AC07F /* HomeCharts_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897A58F27DFDC5C008AC07F /* HomeCharts_View.swift */; };
 		98B0EF1527E1D07E009EF055 /* ProgressGraph_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0EF1427E1D07E009EF055 /* ProgressGraph_Component.swift */; };
+		98C39A9127E1E01700EEBA63 /* Message_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C39A9027E1E01700EEBA63 /* Message_Component.swift */; };
 		98E4A32827D17B3200F07E6D /* SignUp2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E4A32727D17B3200F07E6D /* SignUp2_View.swift */; };
 		98E4A32B27D182B600F07E6D /* DropDown_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E4A32A27D182B600F07E6D /* DropDown_Component.swift */; };
 		98E9256F27CC0806000942DA /* JWJWCenterHeader_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9256E27CC0806000942DA /* JWJWCenterHeader_Component.swift */; };
@@ -53,6 +54,7 @@
 		988182D727CBFE33009D3661 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		9897A58F27DFDC5C008AC07F /* HomeCharts_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharts_View.swift; sourceTree = "<group>"; };
 		98B0EF1427E1D07E009EF055 /* ProgressGraph_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressGraph_Component.swift; sourceTree = "<group>"; };
+		98C39A9027E1E01700EEBA63 /* Message_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_Component.swift; sourceTree = "<group>"; };
 		98E4A32727D17B3200F07E6D /* SignUp2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2_View.swift; sourceTree = "<group>"; };
 		98E4A32A27D182B600F07E6D /* DropDown_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown_Component.swift; sourceTree = "<group>"; };
 		98E9256E27CC0806000942DA /* JWJWCenterHeader_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWJWCenterHeader_Component.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				98FBDFBD27D082E200A9FCEC /* RadioButtonGroup_Component.swift */,
 				98E4A32A27D182B600F07E6D /* DropDown_Component.swift */,
 				9812A56627D406290092ADCD /* TileSelect_Component.swift */,
+				98C39A9027E1E01700EEBA63 /* Message_Component.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				981AB70227D4735700865950 /* SignUp3_View.swift in Sources */,
 				9811F46B27D486A2001DC440 /* ViewRouter.swift in Sources */,
 				9811F46527D47BFF001DC440 /* SignUpPage_View.swift in Sources */,
+				98C39A9127E1E01700EEBA63 /* Message_Component.swift in Sources */,
 				98E9256F27CC0806000942DA /* JWJWCenterHeader_Component.swift in Sources */,
 				988182D827CBFE33009D3661 /* UIConstants.swift in Sources */,
 				98FBDFB527D07C7C00A9FCEC /* CenterHeader_Component.swift in Sources */,

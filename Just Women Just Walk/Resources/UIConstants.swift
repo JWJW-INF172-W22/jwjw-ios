@@ -86,6 +86,12 @@ class UIConstants : ObservableObject {
         blue: 97 / 255
     )
     
+    @Published var messageBgColorA = Color(
+        red: 177 / 255,
+        green: 208 / 255,
+        blue: 255 / 255
+    )
+    
     @Published var buttonCornerRadius : CGFloat = 10
     @Published var buttonLineWidth : CGFloat = 1
     @Published var buttonHeight : CGFloat = 50

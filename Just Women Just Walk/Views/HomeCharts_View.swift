@@ -44,7 +44,9 @@ struct HomeCharts_View: View {
                     ProgressGraph_Component(progress: .constant(0.7),
                                             label: .constant("Weekly"))
                 .padding()
-            }
+                }
+                Message_Component(imageSrc: .constant("undraw_walking_outside"),
+                                  message: .constant("Cool down. At the end of a fast walk, walk slowly for 5 minutes to help your muscles cool down."))
             }.padding()
         }
     }
