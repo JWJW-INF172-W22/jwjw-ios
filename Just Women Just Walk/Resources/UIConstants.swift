@@ -80,6 +80,12 @@ class UIConstants : ObservableObject {
         blue: 112 / 255
     )
     
+    @Published var miniGraphFgColor = Color(
+        red: 89 / 255,
+        green: 128 / 255,
+        blue: 97 / 255
+    )
+    
     @Published var buttonCornerRadius : CGFloat = 10
     @Published var buttonLineWidth : CGFloat = 1
     @Published var buttonHeight : CGFloat = 50
