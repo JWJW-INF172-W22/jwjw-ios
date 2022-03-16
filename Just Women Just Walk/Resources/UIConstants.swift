@@ -10,8 +10,8 @@ import SwiftUI
 class UIConstants : ObservableObject {    
     @Published var bgColor = Color(
         red: 224 / 255,
-        green: 232 / 255,
-        blue: 215 / 255
+        green: 246 / 255,
+        blue: 235 / 255
     )
     
     @Published var buttonbgColor = Color(
@@ -72,6 +72,12 @@ class UIConstants : ObservableObject {
         red: 0 / 255,
         green: 83 / 255,
         blue: 209 / 255
+    )
+    
+    @Published var graphFgColor = Color(
+        red: 248 / 255,
+        green: 109 / 255,
+        blue: 112 / 255
     )
     
     @Published var buttonCornerRadius : CGFloat = 10
