@@ -45,6 +45,9 @@ struct HomeCharts_View: View {
                                             label: .constant("Weekly"))
                 .padding()
                 }
+                BarGraph_Component(values: .constant([100, 200, 500, 700, 300, 400, 0]),
+                                   labels: .constant(["S", "M", "T", "W", "T", "F", "S"]),
+                                   highlight: .constant(5))
                 Message_Component(imageSrc: .constant("undraw_walking_outside"),
                                   message: .constant("Cool down. At the end of a fast walk, walk slowly for 5 minutes to help your muscles cool down."))
             }.padding()

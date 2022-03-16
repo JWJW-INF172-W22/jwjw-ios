@@ -20,6 +20,9 @@ struct Main_View: View {
         case .SignUp:
             SignUpPage_View()
                 .environmentObject(uiConstants)
+        case .HomeCharts:
+            HomeCharts_View()
+                .environmentObject(uiConstants)
         }
     }
 }

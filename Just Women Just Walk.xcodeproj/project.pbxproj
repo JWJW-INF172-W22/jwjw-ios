@@ -21,6 +21,7 @@
 		988182D827CBFE33009D3661 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182D727CBFE33009D3661 /* UIConstants.swift */; };
 		9897A59027DFDC5C008AC07F /* HomeCharts_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897A58F27DFDC5C008AC07F /* HomeCharts_View.swift */; };
 		98B0EF1527E1D07E009EF055 /* ProgressGraph_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0EF1427E1D07E009EF055 /* ProgressGraph_Component.swift */; };
+		98B9BA9A27E1E7700022E7D7 /* BarGraph_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9BA9927E1E7700022E7D7 /* BarGraph_Component.swift */; };
 		98C39A9127E1E01700EEBA63 /* Message_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C39A9027E1E01700EEBA63 /* Message_Component.swift */; };
 		98E4A32827D17B3200F07E6D /* SignUp2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E4A32727D17B3200F07E6D /* SignUp2_View.swift */; };
 		98E4A32B27D182B600F07E6D /* DropDown_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E4A32A27D182B600F07E6D /* DropDown_Component.swift */; };
@@ -54,6 +55,7 @@
 		988182D727CBFE33009D3661 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		9897A58F27DFDC5C008AC07F /* HomeCharts_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharts_View.swift; sourceTree = "<group>"; };
 		98B0EF1427E1D07E009EF055 /* ProgressGraph_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressGraph_Component.swift; sourceTree = "<group>"; };
+		98B9BA9927E1E7700022E7D7 /* BarGraph_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraph_Component.swift; sourceTree = "<group>"; };
 		98C39A9027E1E01700EEBA63 /* Message_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_Component.swift; sourceTree = "<group>"; };
 		98E4A32727D17B3200F07E6D /* SignUp2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2_View.swift; sourceTree = "<group>"; };
 		98E4A32A27D182B600F07E6D /* DropDown_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown_Component.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				98FCBFA727D88F8E00801896 /* DailyStepsGraph_Component.swift */,
 				98B0EF1427E1D07E009EF055 /* ProgressGraph_Component.swift */,
+				98B9BA9927E1E7700022E7D7 /* BarGraph_Component.swift */,
 			);
 			path = Graphs;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				98B0EF1527E1D07E009EF055 /* ProgressGraph_Component.swift in Sources */,
 				98E9258227CCAA76000942DA /* SignUp1_View.swift in Sources */,
+				98B9BA9A27E1E7700022E7D7 /* BarGraph_Component.swift in Sources */,
 				98FCBFA827D88F8E00801896 /* DailyStepsGraph_Component.swift in Sources */,
 				9811F46227D478B7001DC440 /* SignUp4_View.swift in Sources */,
 				9811F46E27D48B7F001DC440 /* OutlineButton_Style.swift in Sources */,

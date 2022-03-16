@@ -30,12 +30,7 @@ struct ProgressGraph_Component: View {
                     .animation(.linear)
                 VStack {
                     Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
                     Text(self.label)
-                    Spacer()
                 }
             }
             HStack {

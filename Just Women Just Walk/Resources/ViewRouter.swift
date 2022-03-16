@@ -10,6 +10,7 @@ import SwiftUI
 enum JWJWPage {
     case logInOrSignUp
     case SignUp
+    case HomeCharts
 }
 
 class ViewRouter : ObservableObject {
