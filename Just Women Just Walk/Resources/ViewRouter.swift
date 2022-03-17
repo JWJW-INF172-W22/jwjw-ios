@@ -14,5 +14,5 @@ enum JWJWPage {
 }
 
 class ViewRouter : ObservableObject {
-    @Published var currentPage : JWJWPage = .logInOrSignUp
+    @Published var currentPage : JWJWPage = .HomeCharts
 }
