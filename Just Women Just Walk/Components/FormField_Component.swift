@@ -28,13 +28,11 @@ struct FormField_Component: View {
             }
             if (formType == .text) {
                 TextField("", text: $fieldValue)
-                    .background(Rectangle().fill(uiConstants.bgColor).frame(width:400, height: 50))
                     .overlay(CustomDivider_Component(),
                              alignment: .bottom)
             }
             else if (formType == .secure) {
                 SecureField("", text: $fieldValue)
-                    .background(Rectangle().fill(uiConstants.bgColor).frame(width:400, height: 50))
                     .overlay(CustomDivider_Component(),
                              alignment: .bottom)
             }

@@ -16,7 +16,7 @@ struct SignUpPage_View: View {
     @State var formDog : String = ""
     @State var formZip : String = ""
     @State var formAge : String = ""
-    @State var formConditions : String = ""
+    @State var formConditions : String = "" 
     
     var body: some View {
         PageContainer_Component(pages: .constant([

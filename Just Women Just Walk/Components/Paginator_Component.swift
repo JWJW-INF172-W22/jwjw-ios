@@ -19,7 +19,7 @@ struct Paginator_Component: View {
                         currPage = currPage - 1
                     }, label: {
                         Image(systemName: "arrow.backward").foregroundColor(.black)
-                    }).padding(.leading)
+                    }).padding(.leading, 50)
                 }
                 Spacer()
             }
@@ -39,7 +39,7 @@ struct Paginator_Component: View {
                         currPage = currPage + 1
                     }, label: {
                         Image(systemName: "arrow.forward").foregroundColor(.black)
-                    }).padding(.trailing)
+                    }).padding(.trailing, 50)
                 }
             }
         }

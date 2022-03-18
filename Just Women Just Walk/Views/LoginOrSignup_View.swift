@@ -14,7 +14,11 @@ struct LoginOrSignup_View: View {
         
     var body: some View {
         ZStack {
-            uiConstants.bgColor.ignoresSafeArea()
+            LinearGradient(colors: [
+                uiConstants.gradientTopColor,
+                uiConstants.gradientBottomColor
+            ], startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
             VStack {
                 Spacer()
                 JWJWCenterHeader_Component()

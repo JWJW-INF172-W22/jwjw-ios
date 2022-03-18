@@ -18,7 +18,6 @@ struct SignUp1_View: View {
     
     var body: some View {
         ZStack {
-            uiConstants.bgColor.ignoresSafeArea()
             VStack {
                 JWJWAppHeader_Component(isNameVisible: .constant(false))
                 Spacer()

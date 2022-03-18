@@ -92,6 +92,18 @@ class UIConstants : ObservableObject {
         blue: 255 / 255
     )
     
+    @Published var gradientTopColor = Color(
+        red: 224 / 255,
+        green: 246 / 255,
+        blue: 235 / 255
+    )
+    
+    @Published var gradientBottomColor = Color(
+        red: 156 / 255,
+        green: 219 / 255,
+        blue: 188 / 255
+    )
+    
     @Published var buttonCornerRadius : CGFloat = 10
     @Published var buttonLineWidth : CGFloat = 1
     @Published var buttonHeight : CGFloat = 50
