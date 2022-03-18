@@ -27,7 +27,7 @@ struct BarGraph_Component: View {
                                 .stroke((n == highlight) ? uiConstants.graphFgColor : uiConstants.miniGraphFgColor, lineWidth: 2)
                                 .background((n == highlight) ? uiConstants.graphFgColor : uiConstants.miniGraphFgColor)
                                 .frame(width: 20,
-                                       height: (CGFloat) (100 * values[n] / values.max()!))
+                                       height: (CGFloat) (100 * values[n] / 10000))
                             Text(labels[n])
                         }
                     }

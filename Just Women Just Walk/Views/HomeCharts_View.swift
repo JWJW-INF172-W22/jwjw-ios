@@ -38,6 +38,7 @@ struct HomeCharts_View: View {
         healthApp.getStepsDay(complete: setSteps, day: displayDate)
         healthApp.getStepsWeek(complete: setStepsWeekly, day: displayDate)
         healthApp.getStepsMonth(complete: setStepsMonthly, day: displayDate)
+        updateStepsEachDay(day: displayDate)
     }
     
     @State var weeklySteps : Int = 0
@@ -54,6 +55,22 @@ struct HomeCharts_View: View {
     var monthlyProgress : Double { Double(monthlySteps) /
         (10000 * Double(getDaysInMonth(day: displayDate))) }
     
+    @State var daysBarGraph : [Int] = [0, 0, 0, 0, 0, 0, 0]
+    
+    func getCompleteHandlerForDay(n : Int) -> (Int) -> Void {
+        return { result in
+            daysBarGraph[n] = result
+        }
+    }
+    
+    
+    func updateStepsEachDay(day : Date) {
+        for i in 0...daysBarGraph.count-1 {
+            let currDay = Calendar.current.date(byAdding: DateComponents(day: i),
+                                                to: day.startOfWeek())!
+            healthApp.getStepsDay(complete: getCompleteHandlerForDay(n: i), day: currDay)
+        }
+    }
     
     var body: some View {
         ZStack {
@@ -103,7 +120,7 @@ struct HomeCharts_View: View {
                                             label: .constant("Weekly"))
                 .padding()
                 }
-                BarGraph_Component(values: .constant([100, 200, 500, 700, 300, 400, 0]),
+                BarGraph_Component(values: $daysBarGraph,
                                    labels: .constant(["S", "M", "T", "W", "T", "F", "S"]),
                                    highlight: .constant(5))
                 Message_Component(imageSrc: .constant("undraw_walking_outside"),
