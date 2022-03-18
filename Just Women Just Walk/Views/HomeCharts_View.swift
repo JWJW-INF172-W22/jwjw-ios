@@ -26,9 +26,17 @@ struct HomeCharts_View: View {
         self.steps = newSteps
     }
     
+    func setStepsWeekly(newSteps : Int) {
+        self.weeklySteps = newSteps
+    }
+    
     func updateSteps() {
         healthApp.getStepsDay(complete: setSteps, day: displayDate)
+        healthApp.getStepsWeek(complete: setStepsWeekly, day: displayDate)
     }
+    
+    @State var weeklySteps : Int = 0
+    var weeklyProgress : Double { Double(weeklySteps) / 70000 }
     
     var body: some View {
         ZStack {
@@ -74,7 +82,7 @@ struct HomeCharts_View: View {
                     ProgressGraph_Component(progress: .constant(0.3),
                                             label: .constant("Monthly"))
                 .padding()
-                    ProgressGraph_Component(progress: .constant(0.7),
+                    ProgressGraph_Component(progress: .constant(weeklyProgress),
                                             label: .constant("Weekly"))
                 .padding()
                 }

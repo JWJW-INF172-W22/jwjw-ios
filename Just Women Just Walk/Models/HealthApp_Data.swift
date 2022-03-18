@@ -7,6 +7,16 @@
 
 import HealthKit
 
+extension Calendar {
+    static let gregorian = Calendar(identifier: .gregorian)
+}
+
+extension Date {
+    func startOfWeek(using calendar: Calendar = .gregorian) -> Date {
+        calendar.dateComponents([.calendar, .yearForWeekOfYear, .weekOfYear], from: self).date!
+    }
+}
+
 struct HealthApp_Data {
     let healthStore = HKHealthStore()
     
@@ -41,6 +51,14 @@ struct HealthApp_Data {
             second: -1
         ), to: startTimeDay)!
         getSteps(complete: complete, start: startTimeDay, end: endTimeDay)
+    }
+    
+    func getStepsWeek(complete : @escaping (Int) -> Void, day : Date) {
+        let startTimeWeek = day.startOfWeek()
+        let endTimeWeek = Calendar.current.date(byAdding: DateComponents(
+            day: 7
+        ), to: startTimeWeek)!
+        getSteps(complete: complete, start: startTimeWeek, end: endTimeWeek)
     }
         
     func getSteps(complete : @escaping (Int) -> Void, start : Date, end : Date) {
