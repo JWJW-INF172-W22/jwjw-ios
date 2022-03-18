@@ -15,7 +15,11 @@ struct SplashScreen_View: View {
             AnyView(SplashScreen1_View()),
             AnyView(SplashScreen2_View()),
             AnyView(SplashScreen3_View())
-        ]))
+        ]),
+        endButtonText: .constant("done"),
+        endButtonAction: .constant {
+            print("we're done!")
+        })
     }
 }
 

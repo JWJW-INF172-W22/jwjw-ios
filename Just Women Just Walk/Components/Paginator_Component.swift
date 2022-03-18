@@ -10,6 +10,9 @@ import SwiftUI
 struct Paginator_Component: View {
     @Binding var pages: Int
     @Binding var currPage: Int
+    @Binding var endButtonText: String
+    @State var endButtonAction: () -> Void
+    
     
     var body: some View {
         ZStack {
@@ -41,6 +44,12 @@ struct Paginator_Component: View {
                         Image(systemName: "arrow.forward").foregroundColor(.black)
                     }).padding(.trailing, 50)
                 }
+                else {
+                    Button(action: { endButtonAction() },
+                           label: { Text(endButtonText) }
+                           ).padding(.trailing, 50)
+                        .foregroundColor(.black)
+                }
             }
         }
     }
@@ -48,7 +57,9 @@ struct Paginator_Component: View {
 
 struct PaginatorComponent_Previews: PreviewProvider {
     static var previews: some View {
-        Paginator_Component(pages: .constant(6),
-                           currPage: .constant(3))
+        Paginator_Component(pages: .constant (6),
+                            currPage: .constant(6),
+                            endButtonText: .constant("submit"),
+                            endButtonAction: {print("endPressed")})
     }
 }

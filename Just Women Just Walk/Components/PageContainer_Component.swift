@@ -11,6 +11,8 @@ struct PageContainer_Component: View {
     @EnvironmentObject var uiConstants : UIConstants
     
     @Binding var pages : [AnyView]
+    @Binding var endButtonText: String
+    @Binding var endButtonAction: () -> Void
     
     @State var currPage : Int = 1
     
@@ -25,7 +27,9 @@ struct PageContainer_Component: View {
                 AnyView(pages[currPage - 1])
                 Spacer()
                 Paginator_Component(pages: .constant(pages.count),
-                                   currPage: $currPage)
+                                    currPage: $currPage,
+                                    endButtonText: $endButtonText,
+                                    endButtonAction: endButtonAction)
             }
         }
     }

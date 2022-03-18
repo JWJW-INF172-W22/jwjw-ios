@@ -29,7 +29,11 @@ struct SignUpPage_View: View {
                          formConditions: $formConditions)),
             AnyView(SignUp3_View()),
             AnyView(SignUp4_View())
-        ]))
+        ]),
+                                endButtonText: .constant("submit"),
+                                endButtonAction: .constant {
+            print("submit!")
+        })
     }
 }
 
