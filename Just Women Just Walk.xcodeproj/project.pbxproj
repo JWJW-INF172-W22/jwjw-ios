@@ -14,12 +14,16 @@
 		9811F46E27D48B7F001DC440 /* OutlineButton_Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F46D27D48B7F001DC440 /* OutlineButton_Style.swift */; };
 		9812A56727D406290092ADCD /* TileSelect_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9812A56627D406290092ADCD /* TileSelect_Component.swift */; };
 		981AB70227D4735700865950 /* SignUp3_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981AB70127D4735700865950 /* SignUp3_View.swift */; };
+		982679D627E3F19500F829ED /* SplashScreen_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982679D527E3F19500F829ED /* SplashScreen_View.swift */; };
 		988182C227CB8148009D3661 /* Just_Women_Just_WalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182C127CB8148009D3661 /* Just_Women_Just_WalkApp.swift */; };
 		988182C427CB8148009D3661 /* LoginOrSignup_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182C327CB8148009D3661 /* LoginOrSignup_View.swift */; };
 		988182C627CB814E009D3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C527CB814E009D3661 /* Assets.xcassets */; };
 		988182C927CB814E009D3661 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C827CB814E009D3661 /* Preview Assets.xcassets */; };
 		988182D827CBFE33009D3661 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182D727CBFE33009D3661 /* UIConstants.swift */; };
 		9897A59027DFDC5C008AC07F /* HomeCharts_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897A58F27DFDC5C008AC07F /* HomeCharts_View.swift */; };
+		98ADC5A527E41A9F00FE1635 /* SplashScreen1_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADC5A427E41A9F00FE1635 /* SplashScreen1_View.swift */; };
+		98ADC5A727E4256500FE1635 /* SplashScreen2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADC5A627E4256500FE1635 /* SplashScreen2_View.swift */; };
+		98ADC5A927E4263A00FE1635 /* SplashScreen3_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADC5A827E4263A00FE1635 /* SplashScreen3_View.swift */; };
 		98B0EF1527E1D07E009EF055 /* ProgressGraph_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0EF1427E1D07E009EF055 /* ProgressGraph_Component.swift */; };
 		98B9BA9A27E1E7700022E7D7 /* BarGraph_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9BA9927E1E7700022E7D7 /* BarGraph_Component.swift */; };
 		98C39A9127E1E01700EEBA63 /* Message_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C39A9027E1E01700EEBA63 /* Message_Component.swift */; };
@@ -46,6 +50,7 @@
 		9811F46D27D48B7F001DC440 /* OutlineButton_Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineButton_Style.swift; sourceTree = "<group>"; };
 		9812A56627D406290092ADCD /* TileSelect_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileSelect_Component.swift; sourceTree = "<group>"; };
 		981AB70127D4735700865950 /* SignUp3_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp3_View.swift; sourceTree = "<group>"; };
+		982679D527E3F19500F829ED /* SplashScreen_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen_View.swift; sourceTree = "<group>"; };
 		988182BE27CB8148009D3661 /* Just Women Just Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Women Just Walk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		988182C127CB8148009D3661 /* Just_Women_Just_WalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just_Women_Just_WalkApp.swift; sourceTree = "<group>"; };
 		988182C327CB8148009D3661 /* LoginOrSignup_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignup_View.swift; sourceTree = "<group>"; };
@@ -54,6 +59,9 @@
 		988182CA27CB814E009D3661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		988182D727CBFE33009D3661 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		9897A58F27DFDC5C008AC07F /* HomeCharts_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharts_View.swift; sourceTree = "<group>"; };
+		98ADC5A427E41A9F00FE1635 /* SplashScreen1_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen1_View.swift; sourceTree = "<group>"; };
+		98ADC5A627E4256500FE1635 /* SplashScreen2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen2_View.swift; sourceTree = "<group>"; };
+		98ADC5A827E4263A00FE1635 /* SplashScreen3_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen3_View.swift; sourceTree = "<group>"; };
 		98B0EF1427E1D07E009EF055 /* ProgressGraph_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressGraph_Component.swift; sourceTree = "<group>"; };
 		98B9BA9927E1E7700022E7D7 /* BarGraph_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraph_Component.swift; sourceTree = "<group>"; };
 		98C39A9027E1E01700EEBA63 /* Message_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_Component.swift; sourceTree = "<group>"; };
@@ -132,6 +140,7 @@
 		988182D227CBF91C009D3661 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				98ADC5A327E41A7F00FE1635 /* SplashScreen */,
 				98E9258027CCA8A4000942DA /* SignUp */,
 				988182C327CB8148009D3661 /* LoginOrSignup_View.swift */,
 				9811F46727D4868F001DC440 /* Main_View.swift */,
@@ -168,6 +177,17 @@
 				9811F46D27D48B7F001DC440 /* OutlineButton_Style.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		98ADC5A327E41A7F00FE1635 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				982679D527E3F19500F829ED /* SplashScreen_View.swift */,
+				98ADC5A427E41A9F00FE1635 /* SplashScreen1_View.swift */,
+				98ADC5A627E4256500FE1635 /* SplashScreen2_View.swift */,
+				98ADC5A827E4263A00FE1635 /* SplashScreen3_View.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 		98E9258027CCA8A4000942DA /* SignUp */ = {
@@ -269,6 +289,7 @@
 				9811F46E27D48B7F001DC440 /* OutlineButton_Style.swift in Sources */,
 				988182C427CB8148009D3661 /* LoginOrSignup_View.swift in Sources */,
 				98E9257E27CC9A22000942DA /* PageContainer_Component.swift in Sources */,
+				98ADC5A727E4256500FE1635 /* SplashScreen2_View.swift in Sources */,
 				98E9257827CC9196000942DA /* CustomDivider_Component.swift in Sources */,
 				98E9257227CC3CB2000942DA /* Button_Component.swift in Sources */,
 				9897A59027DFDC5C008AC07F /* HomeCharts_View.swift in Sources */,
@@ -283,11 +304,14 @@
 				981AB70227D4735700865950 /* SignUp3_View.swift in Sources */,
 				9811F46B27D486A2001DC440 /* ViewRouter.swift in Sources */,
 				9811F46527D47BFF001DC440 /* SignUpPage_View.swift in Sources */,
+				98ADC5A927E4263A00FE1635 /* SplashScreen3_View.swift in Sources */,
 				98C39A9127E1E01700EEBA63 /* Message_Component.swift in Sources */,
 				98E9256F27CC0806000942DA /* JWJWCenterHeader_Component.swift in Sources */,
 				988182D827CBFE33009D3661 /* UIConstants.swift in Sources */,
+				98ADC5A527E41A9F00FE1635 /* SplashScreen1_View.swift in Sources */,
 				98FBDFB527D07C7C00A9FCEC /* CenterHeader_Component.swift in Sources */,
 				98FBDFBE27D082E200A9FCEC /* RadioButtonGroup_Component.swift in Sources */,
+				982679D627E3F19500F829ED /* SplashScreen_View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
