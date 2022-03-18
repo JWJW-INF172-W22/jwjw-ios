@@ -11,12 +11,10 @@ struct HomeCharts_View: View {
     @EnvironmentObject var uiConstants : UIConstants
     
     @Binding var healthApp : HealthApp_Data
-        
-    let now = Date()
-    let format = DateFormatter()
     
     @State var displayDate = Date()
     var displayDateText : String {
+        let format = DateFormatter()
         format.locale = Locale(identifier: "en_US")
         format.dateFormat = "EEEE, MMMM dd"
         return format.string(from: displayDate)
@@ -28,9 +26,8 @@ struct HomeCharts_View: View {
         self.steps = newSteps
     }
     
-    func getSteps() -> Int {
-        healthApp.getTodaysStep(complete: setSteps)
-        return self.steps
+    func updateSteps() {
+        healthApp.getStepsDay(complete: setSteps, day: displayDate)
     }
     
     var body: some View {
@@ -42,16 +39,35 @@ struct HomeCharts_View: View {
                 .ignoresSafeArea()
             VStack{
                 ZStack {
+                    HStack {
+                        Button(action: {
+                            displayDate = Calendar.current.date(byAdding: DateComponents(
+                                day: -1,
+                            second: +1), to: displayDate)!
+                            updateSteps()
+                        }, label: {
+                            Image(systemName: "arrow.backward").foregroundColor(.black)
+                        }).padding(.trailing, 50)
+                        Spacer()
+                    }
                     Text(displayDateText)
                         .fontWeight(.bold)
-                    HStack {
-                        Text("<")
-                        Spacer()
-                        Text(">")
+                    if (!Calendar.current.isDateInToday(displayDate)) {
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                displayDate = Calendar.current.date(byAdding: DateComponents(
+                                    day: 1,
+                                second: -1), to: displayDate)!
+                                updateSteps()
+                            }, label: {
+                                Image(systemName: "arrow.forward").foregroundColor(.black)
+                            }).padding(.trailing, 50)
+                        }
                     }
                 }
                 DailyStepsGraph_Component(
-                    steps: .constant(getSteps()),
+                    steps: $steps,
                     goal: .constant(10000)
                 ).padding()
                 HStack {
@@ -68,7 +84,9 @@ struct HomeCharts_View: View {
                 Message_Component(imageSrc: .constant("undraw_walking_outside"),
                                   message: .constant("Cool down. At the end of a fast walk, walk slowly for 5 minutes to help your muscles cool down."))
             }.padding()
-        }
+        }.onAppear (perform: {
+            updateSteps()
+        })
     }
 }
 
