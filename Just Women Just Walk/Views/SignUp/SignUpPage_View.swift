@@ -19,21 +19,28 @@ struct SignUpPage_View: View {
     @State var formConditions : String = "" 
     
     var body: some View {
-        PageContainer_Component(pages: .constant([
-            AnyView(SignUp1_View(formName: $formName,
-                         formEmail: $formEmail,
-                         formPassword: $formPassword)),
-            AnyView(SignUp2_View(formDog: $formDog,
-                         formZip: $formZip,
-                         formAge: $formAge,
-                         formConditions: $formConditions)),
-            AnyView(SignUp3_View()),
-            AnyView(SignUp4_View())
-        ]),
-                                endButtonText: .constant("submit"),
-                                endButtonAction: .constant {
-            print("submit!")
-        })
+        ZStack {
+            LinearGradient(colors: [
+                uiConstants.gradientTopColor,
+                uiConstants.gradientBottomColor
+            ], startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
+            PageContainer_Component(pages: .constant([
+                AnyView(SignUp1_View(formName: $formName,
+                             formEmail: $formEmail,
+                             formPassword: $formPassword)),
+                AnyView(SignUp2_View(formDog: $formDog,
+                             formZip: $formZip,
+                             formAge: $formAge,
+                             formConditions: $formConditions)),
+                AnyView(SignUp3_View()),
+                AnyView(SignUp4_View())
+            ]),
+                                    endButtonText: .constant("submit"),
+                                    endButtonAction: .constant {
+                print("submit!")
+            })
+        }
     }
 }
 
