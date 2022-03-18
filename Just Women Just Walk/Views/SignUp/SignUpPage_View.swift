@@ -18,7 +18,10 @@ struct SignUpPage_View: View {
     @State var formDog : String = ""
     @State var formZip : String = ""
     @State var formAge : String = ""
-    @State var formConditions : String = "" 
+    @State var formConditions : [String] = []
+    @State var formGoals : [String] = []
+    @State var formCurrentSteps : [String] = []
+    @State var formStepGoal : String = ""
     
     var body: some View {
         ZStack {
@@ -33,10 +36,13 @@ struct SignUpPage_View: View {
                              formPassword: $formPassword)),
                 AnyView(SignUp2_View(formDog: $formDog,
                              formZip: $formZip,
-                             formAge: $formAge,
-                             formConditions: $formConditions)),
-                AnyView(SignUp3_View()),
-                AnyView(SignUp4_View())
+                             formAge: $formAge)),
+                AnyView(SignUp3_View(formSelected: $formConditions)),
+                AnyView(SignUp4_View(formSelected: $formGoals)),
+                AnyView(SignUp5_View(
+                    formSelected: $formCurrentSteps,
+                    formStepsGoal: $formStepGoal
+                ))
             ]),
                                     endButtonText: .constant("submit"),
                                     endButtonAction: .constant {

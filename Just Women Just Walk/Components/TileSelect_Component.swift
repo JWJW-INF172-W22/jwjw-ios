@@ -10,6 +10,7 @@ import SwiftUI
 enum TileColor {
     case red
     case blue
+    case purple
 }
 
 struct TileSelect_Component: View {
@@ -21,15 +22,29 @@ struct TileSelect_Component: View {
     @Binding var max : Int
     
     var unselectedColor : Color {
-        (tileColor == .red) ? uiConstants.tileRedUnselectedColor : uiConstants.tileBlueUnselectedColor
+        switch tileColor {
+        case .blue: return uiConstants.tileBlueUnselectedColor
+        case .red: return uiConstants.tileRedUnselectedColor
+        case .purple: return uiConstants.tilePurpleUnselectedColor
+        }
     }
     
     var selectedColor : Color {
-        (tileColor == .red) ? uiConstants.tileRedSelectedColor : uiConstants.tileBlueSelectedColor
+        switch tileColor {
+        case .blue: return uiConstants.tileBlueSelectedColor
+        case .red: return uiConstants.tileRedSelectedColor
+        case .purple: return uiConstants.tilePurpleSelectedColor
+        }
+
     }
     
     var selectedStrokeColor : Color {
-        (tileColor == .red) ? uiConstants.tileRedSelectedStrokeColor : uiConstants.tileBlueSelectedStrokeColor
+        switch tileColor {
+        case .blue: return uiConstants.tileBlueSelectedStrokeColor
+        case .red: return uiConstants.tileRedSelectedStrokeColor
+        case .purple: return uiConstants.tilePurpleSelectedStrokeColor
+        }
+
     }
     
     
@@ -42,6 +57,10 @@ struct TileSelect_Component: View {
                             if (selected.contains(text)) {
                                 selected.remove(at: selected.firstIndex(of: text)!)
                             }
+                            else if (max == 1 && selected.count > 0) {
+                                selected.remove(at: 0)
+                                selected.append(text)
+                            }
                             else if (max == 0 || selected.count < max) {
                                 selected.append(text)
                             }
@@ -50,6 +69,7 @@ struct TileSelect_Component: View {
                             Text(text)
                                 .foregroundColor(.black)
                                 .multilineTextAlignment(.center)
+                                .frame(width: 150, height: 150)
                                 .background(RoundedRectangle(cornerRadius: 25)
                                                 .stroke((selected.contains(text) ?
                                                             selectedStrokeColor :
@@ -60,7 +80,7 @@ struct TileSelect_Component: View {
                                                                 unselectedColor))
                                                 .frame(width: 150, height: 150)
                                                 .cornerRadius(25))
-                        }).frame(width: 150, height: 150)
+                        })
                         .padding(5)
                     }
                 }

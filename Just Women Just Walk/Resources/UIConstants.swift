@@ -74,6 +74,24 @@ class UIConstants : ObservableObject {
         blue: 209 / 255
     )
     
+    @Published var tilePurpleUnselectedColor = Color(
+        red: 241 / 255,
+        green: 233 / 255,
+        blue: 255 / 255
+    )
+    
+    @Published var tilePurpleSelectedColor = Color(
+        red: 224 / 255,
+        green: 214 / 255,
+        blue: 242 / 255
+    )
+    
+    @Published var tilePurpleSelectedStrokeColor = Color(
+        red: 123 / 255,
+        green: 97 / 255,
+        blue: 255 / 255
+    )
+    
     @Published var graphFgColor = Color(
         red: 248 / 255,
         green: 109 / 255,

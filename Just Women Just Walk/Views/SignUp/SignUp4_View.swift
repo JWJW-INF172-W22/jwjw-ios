@@ -10,39 +10,28 @@ import SwiftUI
 struct SignUp4_View: View {
     @EnvironmentObject var uiConstants : UIConstants
     
-    @State var formSelected : [String] = []
-    @State var formStepsGoal : String = ""
+    @Binding var formSelected: [String]
     
     var body: some View {
         VStack {
-            Text("Approximately how many steps do you walk each day?")
-            TileSelect_Component(tileColor: .constant(.blue),
+            CenterHeader_Component(headerText: .constant("What are your walking goals?"))
+            Text("(Select up to 3)")
+            TileSelect_Component(tileColor: .constant(.red),
                                  choices: .constant([
-                                    ["<2000", "2,000-3,000"],
-                                    ["3,001-5,000", "5,001-8000"],
-                                    ["8,001-10,000+", "Not sure"],
+                                    ["Improve overall health", "Improve mental health"],
+                                    ["Burn calories", "Get in shape"],
+                                    ["Reduce stress", "Increase energy"],
+                                    ["Connect with family/friends"]
                                  ]),
                                  selected: $formSelected,
-                                 max: .constant(1))
-            DropDown_Component(selected: $formStepsGoal,
-                               choices: .constant([
-                                "2000 steps (14,000 weekly)",
-                                "3000 steps (21,000 weekly)",
-                                "4000 steps (28,000 weekly)",
-                                "5000 steps (35,000 weekly)",
-                                "6000 steps (42,000 weekly)",
-                                "7000 steps (49,000 weekly)",
-                                "8000 steps (56,000 weekly)",
-                                "9000 steps (63,000 weekly)",
-                                "10,000 steps (70,000 weekly)",
-                               ]),
-                               labelText: .constant("My daily step goal is..."))
+                                 max: .constant(3))
         }
     }
 }
 
 struct SignUp4_View_Previews: PreviewProvider {
     static var previews: some View {
-        SignUp4_View().environmentObject(UIConstants())
+        SignUp4_View(formSelected: .constant([]))
+            .environmentObject(UIConstants())
     }
 }

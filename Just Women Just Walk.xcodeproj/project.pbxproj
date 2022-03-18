@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9811F46227D478B7001DC440 /* SignUp4_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F46127D478B7001DC440 /* SignUp4_View.swift */; };
+		9811F46227D478B7001DC440 /* SignUp5_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F46127D478B7001DC440 /* SignUp5_View.swift */; };
 		9811F46527D47BFF001DC440 /* SignUpPage_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F46427D47BFF001DC440 /* SignUpPage_View.swift */; };
 		9811F46827D4868F001DC440 /* Main_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F46727D4868F001DC440 /* Main_View.swift */; };
 		9811F46B27D486A2001DC440 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F46A27D486A2001DC440 /* ViewRouter.swift */; };
 		9811F46E27D48B7F001DC440 /* OutlineButton_Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F46D27D48B7F001DC440 /* OutlineButton_Style.swift */; };
 		9812A56727D406290092ADCD /* TileSelect_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9812A56627D406290092ADCD /* TileSelect_Component.swift */; };
-		981AB70227D4735700865950 /* SignUp3_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981AB70127D4735700865950 /* SignUp3_View.swift */; };
+		981AB70227D4735700865950 /* SignUp4_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981AB70127D4735700865950 /* SignUp4_View.swift */; };
 		982679D627E3F19500F829ED /* SplashScreen_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982679D527E3F19500F829ED /* SplashScreen_View.swift */; };
+		98793A5A27E52D7200AF2983 /* SignUp3_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98793A5927E52D7200AF2983 /* SignUp3_View.swift */; };
 		988182C227CB8148009D3661 /* Just_Women_Just_WalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182C127CB8148009D3661 /* Just_Women_Just_WalkApp.swift */; };
 		988182C427CB8148009D3661 /* LoginOrSignup_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988182C327CB8148009D3661 /* LoginOrSignup_View.swift */; };
 		988182C627CB814E009D3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988182C527CB814E009D3661 /* Assets.xcassets */; };
@@ -45,14 +46,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9811F46127D478B7001DC440 /* SignUp4_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp4_View.swift; sourceTree = "<group>"; };
+		9811F46127D478B7001DC440 /* SignUp5_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp5_View.swift; sourceTree = "<group>"; };
 		9811F46427D47BFF001DC440 /* SignUpPage_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage_View.swift; sourceTree = "<group>"; };
 		9811F46727D4868F001DC440 /* Main_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_View.swift; sourceTree = "<group>"; };
 		9811F46A27D486A2001DC440 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		9811F46D27D48B7F001DC440 /* OutlineButton_Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineButton_Style.swift; sourceTree = "<group>"; };
 		9812A56627D406290092ADCD /* TileSelect_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileSelect_Component.swift; sourceTree = "<group>"; };
-		981AB70127D4735700865950 /* SignUp3_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp3_View.swift; sourceTree = "<group>"; };
+		981AB70127D4735700865950 /* SignUp4_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp4_View.swift; sourceTree = "<group>"; };
 		982679D527E3F19500F829ED /* SplashScreen_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen_View.swift; sourceTree = "<group>"; };
+		98793A5927E52D7200AF2983 /* SignUp3_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp3_View.swift; sourceTree = "<group>"; };
 		988182BE27CB8148009D3661 /* Just Women Just Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Women Just Walk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		988182C127CB8148009D3661 /* Just_Women_Just_WalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just_Women_Just_WalkApp.swift; sourceTree = "<group>"; };
 		988182C327CB8148009D3661 /* LoginOrSignup_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignup_View.swift; sourceTree = "<group>"; };
@@ -212,9 +214,10 @@
 			children = (
 				98E9258127CCAA76000942DA /* SignUp1_View.swift */,
 				98E4A32727D17B3200F07E6D /* SignUp2_View.swift */,
-				981AB70127D4735700865950 /* SignUp3_View.swift */,
-				9811F46127D478B7001DC440 /* SignUp4_View.swift */,
+				981AB70127D4735700865950 /* SignUp4_View.swift */,
+				9811F46127D478B7001DC440 /* SignUp5_View.swift */,
 				9811F46427D47BFF001DC440 /* SignUpPage_View.swift */,
+				98793A5927E52D7200AF2983 /* SignUp3_View.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -302,7 +305,7 @@
 				98E9258227CCAA76000942DA /* SignUp1_View.swift in Sources */,
 				98B9BA9A27E1E7700022E7D7 /* BarGraph_Component.swift in Sources */,
 				98FCBFA827D88F8E00801896 /* DailyStepsGraph_Component.swift in Sources */,
-				9811F46227D478B7001DC440 /* SignUp4_View.swift in Sources */,
+				9811F46227D478B7001DC440 /* SignUp5_View.swift in Sources */,
 				9811F46E27D48B7F001DC440 /* OutlineButton_Style.swift in Sources */,
 				988182C427CB8148009D3661 /* LoginOrSignup_View.swift in Sources */,
 				98E9257E27CC9A22000942DA /* PageContainer_Component.swift in Sources */,
@@ -311,6 +314,7 @@
 				98E9257227CC3CB2000942DA /* Button_Component.swift in Sources */,
 				9897A59027DFDC5C008AC07F /* HomeCharts_View.swift in Sources */,
 				9812A56727D406290092ADCD /* TileSelect_Component.swift in Sources */,
+				98793A5A27E52D7200AF2983 /* SignUp3_View.swift in Sources */,
 				98E9257B27CC9384000942DA /* Paginator_Component.swift in Sources */,
 				98E9257527CC8CED000942DA /* JWJWAppHeader_Component.swift in Sources */,
 				988182C227CB8148009D3661 /* Just_Women_Just_WalkApp.swift in Sources */,
@@ -318,7 +322,7 @@
 				98E4A32B27D182B600F07E6D /* DropDown_Component.swift in Sources */,
 				98E4A32827D17B3200F07E6D /* SignUp2_View.swift in Sources */,
 				9811F46827D4868F001DC440 /* Main_View.swift in Sources */,
-				981AB70227D4735700865950 /* SignUp3_View.swift in Sources */,
+				981AB70227D4735700865950 /* SignUp4_View.swift in Sources */,
 				9811F46B27D486A2001DC440 /* ViewRouter.swift in Sources */,
 				9811F46527D47BFF001DC440 /* SignUpPage_View.swift in Sources */,
 				98ADC5A927E4263A00FE1635 /* SplashScreen3_View.swift in Sources */,
