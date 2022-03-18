@@ -30,13 +30,30 @@ struct HomeCharts_View: View {
         self.weeklySteps = newSteps
     }
     
+    func setStepsMonthly(newSteps : Int) {
+        self.monthlySteps = newSteps
+    }
+    
     func updateSteps() {
         healthApp.getStepsDay(complete: setSteps, day: displayDate)
         healthApp.getStepsWeek(complete: setStepsWeekly, day: displayDate)
+        healthApp.getStepsMonth(complete: setStepsMonthly, day: displayDate)
     }
     
     @State var weeklySteps : Int = 0
     var weeklyProgress : Double { Double(weeklySteps) / 70000 }
+    
+    func getDaysInMonth(day: Date) -> Int {
+        return Calendar.current.dateComponents([.day],
+                                               from: day.startOfMonth(),
+                                               to: day.endOfMonth())
+        .day!
+    }
+    
+    @State var monthlySteps : Int = 0
+    var monthlyProgress : Double { Double(monthlySteps) /
+        (10000 * Double(getDaysInMonth(day: displayDate))) }
+    
     
     var body: some View {
         ZStack {
@@ -79,7 +96,7 @@ struct HomeCharts_View: View {
                     goal: .constant(10000)
                 ).padding()
                 HStack {
-                    ProgressGraph_Component(progress: .constant(0.3),
+                    ProgressGraph_Component(progress: .constant(monthlyProgress),
                                             label: .constant("Monthly"))
                 .padding()
                     ProgressGraph_Component(progress: .constant(weeklyProgress),

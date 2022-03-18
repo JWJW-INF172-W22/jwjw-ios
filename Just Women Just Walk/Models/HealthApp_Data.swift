@@ -15,6 +15,14 @@ extension Date {
     func startOfWeek(using calendar: Calendar = .gregorian) -> Date {
         calendar.dateComponents([.calendar, .yearForWeekOfYear, .weekOfYear], from: self).date!
     }
+    
+    func startOfMonth() -> Date {
+        return Calendar.current.date(from: Calendar.current.dateComponents([.year, .month], from: Calendar.current.startOfDay(for: self)))!
+    }
+    
+    func endOfMonth() -> Date {
+        return Calendar.current.date(byAdding: DateComponents(month: 1, day: -1), to: self.startOfMonth())!
+    }
 }
 
 struct HealthApp_Data {
@@ -60,7 +68,13 @@ struct HealthApp_Data {
         ), to: startTimeWeek)!
         getSteps(complete: complete, start: startTimeWeek, end: endTimeWeek)
     }
-        
+    
+    func getStepsMonth(complete : @escaping (Int) -> Void, day : Date) {
+        let startTimeWeek = day.startOfMonth()
+        let endTimeWeek = day.endOfMonth()
+        getSteps(complete: complete, start: startTimeWeek, end: endTimeWeek)
+    }
+    
     func getSteps(complete : @escaping (Int) -> Void, start : Date, end : Date) {
         let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
         
