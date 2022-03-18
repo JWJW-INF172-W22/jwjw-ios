@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SplashScreen_View: View {
+    @StateObject var viewRouter: ViewRouter
+    
     @EnvironmentObject var uiConstants : UIConstants
     
     var body: some View {
@@ -18,13 +20,13 @@ struct SplashScreen_View: View {
         ]),
         endButtonText: .constant("done"),
         endButtonAction: .constant {
-            print("we're done!")
+            viewRouter.currentPage = .logInOrSignUp
         })
     }
 }
 
 struct SplashScreen_View_Previews: PreviewProvider {
     static var previews: some View {
-        SplashScreen_View().environmentObject(UIConstants())
+        SplashScreen_View(viewRouter: ViewRouter()).environmentObject(UIConstants())
     }
 }

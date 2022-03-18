@@ -11,8 +11,9 @@ enum JWJWPage {
     case logInOrSignUp
     case SignUp
     case HomeCharts
+    case SplashScreen
 }
 
 class ViewRouter : ObservableObject {
-    @Published var currentPage : JWJWPage = .HomeCharts
+    @Published var currentPage : JWJWPage = .SplashScreen
 }

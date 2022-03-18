@@ -23,6 +23,9 @@ struct Main_View: View {
         case .HomeCharts:
             HomeCharts_View()
                 .environmentObject(uiConstants)
+        case .SplashScreen:
+            SplashScreen_View(viewRouter: viewRouter)
+                .environmentObject(uiConstants)
         }
     }
 }
