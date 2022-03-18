@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeCharts_View: View {
     @EnvironmentObject var uiConstants : UIConstants
     
+    @Binding var healthApp : HealthApp_Data
+        
     let now = Date()
     let format = DateFormatter()
     
@@ -18,6 +20,17 @@ struct HomeCharts_View: View {
         format.locale = Locale(identifier: "en_US")
         format.dateFormat = "EEEE, MMMM dd"
         return format.string(from: displayDate)
+    }
+    
+    @State var steps : Int = -1
+    
+    func setSteps(newSteps : Int) {
+        self.steps = newSteps
+    }
+    
+    func getSteps() -> Int {
+        healthApp.getTodaysStep(complete: setSteps)
+        return self.steps
     }
     
     var body: some View {
@@ -38,7 +51,7 @@ struct HomeCharts_View: View {
                     }
                 }
                 DailyStepsGraph_Component(
-                    steps: .constant(6000),
+                    steps: .constant(getSteps()),
                     goal: .constant(10000)
                 ).padding()
                 HStack {
@@ -61,6 +74,8 @@ struct HomeCharts_View: View {
 
 struct HomeCharts_View_Previews: PreviewProvider {
     static var previews: some View {
-        HomeCharts_View().environmentObject(UIConstants())
+        HomeCharts_View(
+            healthApp: .constant(HealthApp_Data())
+        ).environmentObject(UIConstants())
     }
 }

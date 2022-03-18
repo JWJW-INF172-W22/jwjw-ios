@@ -21,7 +21,7 @@ struct Main_View: View {
             SignUpPage_View()
                 .environmentObject(uiConstants)
         case .HomeCharts:
-            HomeCharts_View()
+            HomeCharts_View(healthApp: .constant(HealthApp_Data()))
                 .environmentObject(uiConstants)
         case .SplashScreen:
             SplashScreen_View(viewRouter: viewRouter)

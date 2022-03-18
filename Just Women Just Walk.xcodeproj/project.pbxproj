@@ -25,6 +25,8 @@
 		98ADC5A727E4256500FE1635 /* SplashScreen2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADC5A627E4256500FE1635 /* SplashScreen2_View.swift */; };
 		98ADC5A927E4263A00FE1635 /* SplashScreen3_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADC5A827E4263A00FE1635 /* SplashScreen3_View.swift */; };
 		98B0EF1527E1D07E009EF055 /* ProgressGraph_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0EF1427E1D07E009EF055 /* ProgressGraph_Component.swift */; };
+		98B5DB9127E462F800A75B52 /* HealthApp_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5DB9027E462F800A75B52 /* HealthApp_Data.swift */; };
+		98B5DB9527E46B2C00A75B52 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B5DB9427E46B2C00A75B52 /* HealthKit.framework */; };
 		98B9BA9A27E1E7700022E7D7 /* BarGraph_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9BA9927E1E7700022E7D7 /* BarGraph_Component.swift */; };
 		98C39A9127E1E01700EEBA63 /* Message_Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C39A9027E1E01700EEBA63 /* Message_Component.swift */; };
 		98E4A32827D17B3200F07E6D /* SignUp2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E4A32727D17B3200F07E6D /* SignUp2_View.swift */; };
@@ -63,6 +65,9 @@
 		98ADC5A627E4256500FE1635 /* SplashScreen2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen2_View.swift; sourceTree = "<group>"; };
 		98ADC5A827E4263A00FE1635 /* SplashScreen3_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen3_View.swift; sourceTree = "<group>"; };
 		98B0EF1427E1D07E009EF055 /* ProgressGraph_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressGraph_Component.swift; sourceTree = "<group>"; };
+		98B5DB9027E462F800A75B52 /* HealthApp_Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthApp_Data.swift; sourceTree = "<group>"; };
+		98B5DB9227E46B2C00A75B52 /* Just Women Just Walk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Just Women Just Walk.entitlements"; sourceTree = "<group>"; };
+		98B5DB9427E46B2C00A75B52 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		98B9BA9927E1E7700022E7D7 /* BarGraph_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraph_Component.swift; sourceTree = "<group>"; };
 		98C39A9027E1E01700EEBA63 /* Message_Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_Component.swift; sourceTree = "<group>"; };
 		98E4A32727D17B3200F07E6D /* SignUp2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2_View.swift; sourceTree = "<group>"; };
@@ -85,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98B5DB9527E46B2C00A75B52 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,7 @@
 			children = (
 				988182C027CB8148009D3661 /* Just Women Just Walk */,
 				988182BF27CB8148009D3661 /* Products */,
+				98B5DB9327E46B2C00A75B52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +117,7 @@
 		988182C027CB8148009D3661 /* Just Women Just Walk */ = {
 			isa = PBXGroup;
 			children = (
+				98B5DB9227E46B2C00A75B52 /* Just Women Just Walk.entitlements */,
 				988182D627CBFE15009D3661 /* Resources */,
 				988182D327CBF921009D3661 /* Components */,
 				988182D227CBF91C009D3661 /* Views */,
@@ -133,6 +141,7 @@
 		988182D127CBF916009D3661 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				98B5DB9027E462F800A75B52 /* HealthApp_Data.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +197,14 @@
 				98ADC5A827E4263A00FE1635 /* SplashScreen3_View.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		98B5DB9327E46B2C00A75B52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98B5DB9427E46B2C00A75B52 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		98E9258027CCA8A4000942DA /* SignUp */ = {
@@ -312,6 +329,7 @@
 				98FBDFB527D07C7C00A9FCEC /* CenterHeader_Component.swift in Sources */,
 				98FBDFBE27D082E200A9FCEC /* RadioButtonGroup_Component.swift in Sources */,
 				982679D627E3F19500F829ED /* SplashScreen_View.swift in Sources */,
+				98B5DB9127E462F800A75B52 /* HealthApp_Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Just Women Just Walk/Just Women Just Walk.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Just Women Just Walk/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -460,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Just Women Just Walk/Just Women Just Walk.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Just Women Just Walk/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
