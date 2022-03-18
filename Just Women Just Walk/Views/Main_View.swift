@@ -18,7 +18,7 @@ struct Main_View: View {
             LoginOrSignup_View(viewRouter: viewRouter)
                 .environmentObject(uiConstants)
         case .SignUp:
-            SignUpPage_View()
+            SignUpPage_View(viewRouter: viewRouter)
                 .environmentObject(uiConstants)
         case .HomeCharts:
             HomeCharts_View(healthApp: .constant(HealthApp_Data()))

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SignUpPage_View: View {
+    @StateObject var viewRouter: ViewRouter
+    
     @EnvironmentObject var uiConstants : UIConstants
     
     @State var formName : String = ""
@@ -38,7 +40,7 @@ struct SignUpPage_View: View {
             ]),
                                     endButtonText: .constant("submit"),
                                     endButtonAction: .constant {
-                print("submit!")
+                viewRouter.currentPage = .HomeCharts
             })
         }
     }
@@ -46,6 +48,6 @@ struct SignUpPage_View: View {
 
 struct SignUpPage_View_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpPage_View().environmentObject(UIConstants())
+        SignUpPage_View(viewRouter: ViewRouter()).environmentObject(UIConstants())
     }
 }
